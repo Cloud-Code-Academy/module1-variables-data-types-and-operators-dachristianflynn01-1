@@ -227,7 +227,7 @@ public with sharing class VariablesDataTypesOperators {
         Integer answer = 48 - ((15 + 5) * 2);
         return answer;
     }
-    
+
     /**
      * Question 15
      * Adjusts the order of operations in an arithmetic expression to produce a desired result.
@@ -244,9 +244,9 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Double complexOrderOfOperations(Integer a, Integer b, Integer c, Integer d, Integer e) {
         // Add parentheses around the multiplication and subtraction operations so that they are performed before division and addition
-        Double result = a * b - c / (Double) d + e;
+        Double result = ((a * b) - c) / (Double) d + e;
 
-        return null; // Replace null with the variable you used to store the result
+        return result;
     }
 
     /**
