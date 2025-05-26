@@ -210,11 +210,9 @@ public with sharing class VariablesDataTypesOperators {
      * @return The result of the adjusted arithmetic expression.
      */
     public static Integer adjustOrderOfOperations1(Integer a, Integer b, Integer c) {
-        // Add parentheses around the addition operation so that it is performed before multiplication
-        Integer result = a + b * c;
-
-        // Return the result
-        return null; // Replace null with the variable you used to store the result
+        // Add parentheses around the addition operation (so that it is performed before multiplication)
+        Integer result = (a + b) * c;
+        return result;
     }
 
     /**
