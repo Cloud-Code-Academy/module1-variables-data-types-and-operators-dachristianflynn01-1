@@ -179,7 +179,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return The number of milliseconds equivalent to the given number of minutes.
      */
     public static Integer convertMinutesToMilliseconds(Integer minutes) {
-        Final Integer MILLISECONDS_PER_MINUTE = 60000;
+        final Integer MILLISECONDS_PER_MINUTE = 60000;
         Integer milliseconds = null;
         milliseconds = minutes * MILLISECONDS_PER_MINUTE;
         return milliseconds; 
@@ -260,8 +260,8 @@ public with sharing class VariablesDataTypesOperators {
         final Double SUBTRACT_FACTOR = 32.0;
         final Double MULTIPLY_FACTOR = 5.0;
         final Double DIVIDE_FACTOR = 9.0;
-    
-        return null; // Replace null with the variable you used to store the result
+        Double tempInCelcius = (fahrenheit - SUBTRACT_FACTOR) * (MULTIPLY_FACTOR / DIVIDE_FACTOR);
+        return tempInCelcius;
     }
 
     
